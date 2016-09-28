@@ -1,0 +1,224 @@
+* {
+    /* Layout Declarations */
+    box-sizing: border-box;
+}
+
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.masthead {
+    padding: 6em 0;
+    background-image: url('../img/masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    color: #000000;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    /* Layout Declarations */
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    color: #000000;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 0px #FFCF33;
+}
+
+#splash {
+    background-color: #FFCF33;
+    width: 100%;
+    padding: 60px 20px;
+    background-size: cover;
+    text-align: center;
+}
+
+.header {
+    max-width: 67.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.profile {
+    float: left;
+    margin-right: 2%;
+    width: 49%;
+}
+
+.welcome {
+    float: left;
+    width: 49%;
+    text-align: left;
+}
+
+#projects {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.container {
+    max-width: 67.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 20px;
+}
+
+.container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.gallery-details {
+    float: left;
+    display: block;
+    margin-left: 2%;
+    width: 32%;
+}
+
+.gallery {
+    float: left;
+    display: block;
+    width: 66%;
+}
+
+.project {
+    float: left;
+    display: block;
+    width: 48%;
+    margin-right: 0;
+    min-width: 300px;
+    min-height: 280px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+a.img {
+    height: 200px;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+
+a.img img {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    left: 0;
+    min-height: 200px;
+    max-width: 300px;
+    width: 100%;
+    z-index: 10;
+}
+
+a.info {
+    font-size: 20px;
+    text-align: left;
+    bottom: 0;
+    display: inline-block;
+    width: 300px;
+    max-height: 51px;
+    padding: 50px 20px 20px 20px;
+    position: relative;
+}
+
+a.info span:first-child {
+    bottom: 36px;
+}
+
+a.info span {
+    position: absolute;
+    display: block;
+}
+
+a.info span:nth-child(2) {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+a.info span {
+    position: absolute;
+    bottom: 18px;
+    display: block;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
+.social {
+    background-color: white;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+
+.social .icons {
+    padding: 0;
+}
+
+.social .icons li {
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: -0.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    cursor: pointer;
+}
+
+.social .fa-twitter {
+    color: #55acee;
+}
+
+.social .fa-linkedin {
+    color: #4c66a4;
+}
+
+.social .fa-github {
+    color: #000000;
+}
+
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
