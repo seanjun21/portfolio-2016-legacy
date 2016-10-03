@@ -9,6 +9,10 @@
     <!--Normalize CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
+    <!--Font CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans" rel="stylesheet">
+
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!--CSS-->
@@ -18,87 +22,97 @@
 </head>
 <body>
 
+<nav>
+    <ul class="topnav" id="myTopnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+    </ul>
+</nav>
+
 <header class="masthead">
-    <p class="masthead-intro text-center">Hi, I'm</p>
-    <h1 class="masthead-heading text-center">Sean!</h1>
+    <div class="profile">
+        <h1>Sean Jun</h1>
+        <h2>Full Stack Developer</h2>
+        <h3>PHOENIX, AZ</h3>
+        <a href="mailto:seanjun21@gmail.com">seanjun21@gmail.com</a>
+        <ul class="contact-list">
+            <a href="mailto:seanjun21@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="http://www.github.com/seanjun21"><i class="fa fa-github fa-fw"></i></a>
+            <a href="http://www.linkedin.com/in/seanjun21"><i class="fa fa-linkedin fa-fw"></i></a>
+            <a href="http://www.twitter.com/seanjun21"><i class="fa fa-twitter fa-fw"></i></a>
+        </ul>
+    </div>
 </header>
 
-<section id="splash">
-    <div class="header">
-        <div class="profile">
-            <h1>Sean Jun</h1>
-            <h2>Full Stack Developer</h2>
-            <h3>Phoenix, AZ</h3>
-            <a href="mailto:seanjun21@gmail.com">seanjun21@gmail.com</a>
-            <ul class="contact-list">
-                <a href="mailto:seanjun21@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
-                <a href="http://www.github.com/seanjun21"><i class="fa fa-github fa-fw"></i></a>
-                <a href="http://www.linkedin.com/in/seanjun21"><i class="fa fa-linkedin fa-fw"></i></a>
-                <a href="http://www.twitter.com/seanjun21"><i class="fa fa-twitter fa-fw"></i></a>
-            </ul>
-        </div>
-        <div class="welcome">
-            <p>Basic biography about myself.</p>
-            <p>I intend to add a picture of myself either here or maybe at the masthead.</p>
-            <p>I wasn't sure about whether to have contact list here or at the bottom. It does feel redundant to have
-                them at both spot</p>
-            <p>So far, project images/descriptions/links are irrelevant to actual work (only for display)</p>
-        </div>
-    </div>
-</section>
+<!--<section id="splash">-->
+    <!--<div class="container">-->
+        <!--<div class="profile">-->
+            <!--<h1>Sean Jun</h1>-->
+            <!--<h2>Full Stack Developer</h2>-->
+            <!--<h3>Phoenix, AZ</h3>-->
+            <!--<a href="mailto:seanjun21@gmail.com">seanjun21@gmail.com</a>-->
+            <!--<ul class="contact-list">-->
+                <!--<a href="mailto:seanjun21@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>-->
+                <!--<a href="http://www.github.com/seanjun21"><i class="fa fa-github fa-fw"></i></a>-->
+                <!--<a href="http://www.linkedin.com/in/seanjun21"><i class="fa fa-linkedin fa-fw"></i></a>-->
+                <!--<a href="http://www.twitter.com/seanjun21"><i class="fa fa-twitter fa-fw"></i></a>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="welcome">-->
+            <!--<p>Basic biography about myself.</p>-->
+            <!--<p>I intend to add a picture of myself either here or maybe at the masthead.</p>-->
+            <!--<p>I wasn't sure about whether to have contact list here or at the bottom. It does feel redundant to have-->
+                <!--them at both spot</p>-->
+            <!--<p>So far, project images/descriptions/links are irrelevant to actual work (only for display)</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!--<section id="skills">-->
+<!--<div class="container">-->
+
+<!--</div>-->
+<!--</section>-->
 
 
-<section id="projects">
-    <div class="container">
-        <div class="gallery-details">
-            <h2>Projects</h2>
-            <p>Click on images to view the demo</p>
-            <p>Click on description to view the source</p>
-        </div>
-        <div class="gallery">
-            <ul>
-                <li class="project">
-                    <a class="img" href="">
-                        <img src="img/letterA.jpeg">
-                    </a>
-                    <a class="info" href="">
-                        <span>Project A</span>
-                        <span>This is description to project A</span>
-                    </a>
-                </li>
-                <li class="project">
-                    <a class="img" href="">
-                        <img src="img/letterB.jpeg">
-                    </a>
-                    <a class="info" href="">
-                        <span>Project B</span>
-                        <span>This is description to project B</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<!--<section id="projects">-->
+    <!--<div class="profile-container">-->
+        <!--<div class="gallery-details">-->
+            <!--<h2>Projects</h2>-->
+            <!--<p>Click on images to view the demo</p>-->
+            <!--<p>Click on description to view the source</p>-->
+        <!--</div>-->
+        <!--<div class="gallery">-->
+            <!--<ul>-->
+                <!--<li class="project">-->
+                    <!--<a class="img" href="">-->
+                        <!--<img src="img/letterA.jpeg">-->
+                    <!--</a>-->
+                    <!--<a class="info" href="">-->
+                        <!--<span>Project A</span>-->
+                        <!--<span>This is description to project A</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li class="project">-->
+                    <!--<a class="img" href="">-->
+                        <!--<img src="img/letterB.jpeg">-->
+                    <!--</a>-->
+                    <!--<a class="info" href="">-->
+                        <!--<span>Project B</span>-->
+                        <!--<span>This is description to project B</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
-<footer class="social">
-    <div class="container">
-        <hr>
-        <h5>Contact me at</h5>
-        <ul class="icons">
-            <li>
-                <i class="fa fa-github"></i>
-            </li>
-            <li>
-                <i class="fa fa-linkedin"></i>
-            </li>
-            <li>
-                <i class="fa fa-twitter"></i>
-            </li>
-        </ul>
-        <span class="copy">&copy; Sean Jun 2016</span>
-    </div>
-</footer>
-
+<script src="js/script.js"></script>
 
 </body>
 </html>
