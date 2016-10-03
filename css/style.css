@@ -80,14 +80,17 @@ ul.topnav li.icon {
 /* Masthead Header */
 
 .masthead {
-    background-color: gold;
+    background-image: url("../img/masthead.jpeg");
+    background-size: cover;
+    background-position: center center;
+    /*background-color: gold;*/
     height: 100%;
     position: relative;
 }
 
 .profile {
     width: 90%;
-    color: black;
+    color: gold;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -96,17 +99,17 @@ ul.topnav li.icon {
 }
 
 .profile h1 {
+    margin: 0 0 32px 0;
     font-size: 48px;
     font-weight: normal;
-    font-family: 'Cardo', serif;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .profile h2 {
     margin: 0;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: normal;
     font-family: 'Josefin Sans', sans-serif;
-    line-height: 40px;
 }
 
 .profile h3 {
@@ -117,19 +120,20 @@ ul.topnav li.icon {
 }
 
 .profile a {
-    color: black;
+    color: gold;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 24px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .profile a:hover {
-    color: blue;
+    color: deepskyblue;
 }
 
 .contact-list {
     padding: 0;
+    margin: 0;
 }
 
 ul.contact-list i {
@@ -150,7 +154,7 @@ ul.contact-list i {
 }
 
 ul.contact-list i:hover {
-    background: rgba(241, 53, 38, 0.1);
+    background-color: darkgoldenrod;
 }
 
 /* Splash Section */
