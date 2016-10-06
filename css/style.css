@@ -164,7 +164,7 @@ ul.contact-list i:hover {
     max-width: 77.5em;
     margin-left: auto;
     margin-right: auto;
-    padding: 4em 1.5em 1em;
+    padding: 4em 2em 1em;
 }
 
 .profile:after {
@@ -228,6 +228,12 @@ ul.contact-list i:hover {
     position: relative;
 }
 
+.resume-category:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .resume-icon i {
     float: left;
     font-size: 38px;
@@ -264,7 +270,7 @@ ul.contact-list i:hover {
 
 .resume-desc h3 {
     margin: 0;
-    padding-top: 1.2em;
+    padding-top: 1em;
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     text-shadow: 1px 1px 2px black;
