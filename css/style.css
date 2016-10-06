@@ -110,14 +110,11 @@ ul.topnav li.icon {
     margin: 0;
     font-size: 30px;
     font-weight: normal;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.header h3 {
+.email {
     margin: 8px 0 18px 0;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: 'Didact Gothic', sans-serif;
 }
 
 .header a {
@@ -125,7 +122,7 @@ ul.topnav li.icon {
     text-decoration: none;
     font-weight: 600;
     font-size: 24px;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .header a:hover {
@@ -154,7 +151,7 @@ ul.contact-list i:hover {
     background-color: #314F81;
 }
 
-/* About Section */
+/* About Section: Profile*/
 
 #about {
     text-align: center;
@@ -164,10 +161,10 @@ ul.contact-list i:hover {
 }
 
 .profile {
-    max-width: 67.5em;
+    max-width: 77.5em;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 20px 20px;
+    padding: 4em 1.5em 1em;
 }
 
 .profile:after {
@@ -179,8 +176,7 @@ ul.contact-list i:hover {
 .picture {
     float: left;
     display: block;
-    /*margin-right: 2.12766%;*/
-    width: 30%;
+    width: 25%;
 }
 
 .my-picture {
@@ -191,27 +187,127 @@ ul.contact-list i:hover {
     background-size: cover;
     background: no-repeat center center;
     border-radius: 99em;
-    border: 5px solid black;
+    border: 1px solid black;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .biography {
     float: left;
     display: block;
-    /*margin-right: 2.12766%;*/
-    width: 49%;
+    width: 67%;
     text-align: left;
 }
 
 .biography p {
     margin: 0;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Didact Gothic', sans-serif;
-    line-height: 36px;
+    line-height: 44px;
     color: black;
 }
 
+/* About Section: Resume*/
+
+.resume {
+    max-width: 67.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.resume-category {
+    width: 50%;
+    float: left;
+    padding: 0 0 2em 3em;
+    position: relative;
+}
+
+.resume-icon i {
+    float: left;
+    font-size: 38px;
+    width: 60px;
+    height: 60px;
+    margin: 0.5%;
+    border: 0px;
+    border-radius: 4px;
+    line-height: 60px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.resume-icon .fa-code {
+    color: red;
+}
+
+.resume-icon .fa-code-fork {
+    color: blue;
+}
+
+.resume-icon .fa-graduation-cap {
+    color: purple;
+}
+
+.resume-icon .fa-briefcase {
+    color: gold;
+}
+
+.resume-desc {
+    float: left;
+    text-align: left;
+    width: 80%;
+}
+
+.resume-desc h3 {
+    margin: 0;
+    padding-top: 1.2em;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px black;
+}
+
+.resume-desc ul {
+    padding: 0;
+    margin: 0;
+}
+
+.resume-desc li {
+    list-style: none;
+    margin: 0.7em 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.resume-desc h4 {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.resume-desc p {
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.resume-desc span {
+    color: gray;
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 740px) {
+    .picture {
+        width: 100%;
+    }
+
+    .biography {
+        width: 100%;
+    }
+    .resume-category {
+        width: 100%;
+    }
+}
 
 /* Projects section */
 
