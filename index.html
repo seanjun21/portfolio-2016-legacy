@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
     <!--Font CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -24,9 +24,9 @@
 
 <nav>
     <ul class="topnav" id="myTopnav">
-        <li><a href="#masthead">Contact</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li id="masthead-nav"><a href="#masthead">SEAN</a></li>
+        <li id="about-nav"><a href="#about">ABOUT</a></li>
+        <li id="projects-nav"><a href="#projects">PROJECTS</a></li>
         <li class="icon">
             <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </li>
@@ -35,124 +35,125 @@
 
 <header id="masthead">
     <div class="header">
-        <h1>Sean Jun</h1>
+        <h1>SEAN JUN</h1>
         <h2>Full Stack Developer</h2>
         <div class="email">
             <a href="mailto:seanjun21@gmail.com">seanjun21@gmail.com</a>
         </div>
         <ul class="contact-list">
             <a href="mailto:seanjun21@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="docs/resume.pdf"><i class="fa fa-file-text fa-fw"></i></a>
             <a href="http://www.github.com/seanjun21"><i class="fa fa-github fa-fw"></i></a>
             <a href="http://www.linkedin.com/in/seanjun21"><i class="fa fa-linkedin fa-fw"></i></a>
             <a href="http://www.twitter.com/seanjun21"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="http://www.instagram.com/seanjun21"><i class="fa fa-instagram fa-fw"></i></a>
         </ul>
     </div>
 </header>
 
 <section id="about">
-    <div class="profile">
-        <div class="picture">
-            <img class='my-picture' src="img/sean.jpeg" alt="me">
-        </div>
-        <div class="biography">
-            <p>
-                Hi, I'm Sean, an aspiring programmer from <strong>PHOENIX, AZ</strong> who enjoys coding and loves to
-                <strong>LEARN</strong>.
-                I come from a scientific background with degrees in Biochemistry and Engineering.
-                From science, I've developed a <strong>FUTURISTIC</strong> mindset which inspired me to learn
-                programming.
-                Science and programming have a lot in common that they are both striving to improve humanity.
-                I wish to contribute my knowledge and skill sets to the society as well.
-            </p>
-        </div>
-    </div>
-    <div class="resume">
-        <div class="resume-category">
-            <div class="resume-icon">
-                <i class="fa fa-code" aria-hidden="true"></i>
+    <div class="container">
+        <div class="profile">
+            <div class="picture">
+                <img class='my-picture' src="img/sean.jpeg" alt="me">
             </div>
-            <div class="resume-desc">
-                <h3 class="skills">SKILLS</h3>
-                <ul>
-                    <li>HTML5, CSS3, JavaScript, ES6</li>
-                    <li>Node.js, React, Express, jQuery, Bootstrap</li>
-                    <li>MongoDB, PostgreSQL, Passport, Knex</li>
-                    <li>Test Driven Development with Mocha/Chai</li>
-                    <li>Webpack, LESS, Babel, Travis CI</li>
-                </ul>
+            <div class="biography">
+                <p>
+                    Hi, I'm Sean, a Full Stack Developer from PHOENIX, AZ with a background in Biochemistry and
+                    Engineering. I believe that my past work and programming share something very important in common;
+                    passionate work in both fields can greatly benefit our communities. It is my personal and
+                    professional goal to continue giving back as a Full Stack Developer.
+                </p>
             </div>
         </div>
-        <div class="resume-category">
-            <div class="resume-icon">
-                <i class="fa fa-code-fork" aria-hidden="true"></i>
+        <div class="resume">
+            <div class="resume-category">
+                <div class="resume-icon">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="resume-desc">
+                    <h3 class="skills">SKILLS</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript/ES6, Node.js</li>
+                        <li>React/Redux, Express, jQuery, Bootstrap, Socket.io</li>
+                        <li>MongoDB, PostgreSQL, Passport, Knex</li>
+                        <li>Test Driven Development with Mocha/Chai</li>
+                        <li>Webpack, LESS, Babel, Travis CI, Heroku</li>
+                    </ul>
+                </div>
             </div>
-            <div class="resume-desc">
-                <h3 class="software">SOFTWARE</h3>
-                <ul>
-                    <li>Sublime Text, Atom, WebStorm</li>
-                    <li>Command Line</li>
-                    <li>Git, SourceTree</li>
-                    <li>Screenhero, Floobits</li>
-                    <li>Postman</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="resume">
-        <div class="resume-category">
-            <div class="resume-icon">
-                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            </div>
-            <div class="resume-desc">
-                <h3 class="education">EDUCATION</h3>
-                <ul>
-                    <li>
-                        <h4>Thinkful</h4>
-                        <p>
-                            Web Development Intensive <span>Fall 2016</span>
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Korea Advanced Institute of Science and Technology</h4>
-                        <p>
-                            M.S., Materials Science and Engineering <span>Summer 2012</span>
-                        </p>
-                    </li>
-                    <li>
-                        <h4>University of California, Santa Barbara</h4>
-                        <p>
-                            B.S., Biochemistry <span>Summer 2008</span>
-                        </p>
-                    </li>
-                </ul>
+            <div class="resume-category">
+                <div class="resume-icon">
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                </div>
+                <div class="resume-desc">
+                    <h3 class="software">SOFTWARE</h3>
+                    <ul>
+                        <li>Sublime Text, Atom, WebStorm</li>
+                        <li>Command Line</li>
+                        <li>Git, GitHub, SourceTree</li>
+                        <li>Screenhero, Floobits</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="resume-category">
-            <div class="resume-icon">
-                <i class="fa fa-briefcase" aria-hidden="true"></i>
+        <div class="resume">
+            <div class="resume-category">
+                <div class="resume-icon">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div class="resume-desc">
+                    <h3 class="education">EDUCATION</h3>
+                    <ul>
+                        <li>
+                            <h4>Thinkful</h4>
+                            <p>
+                                Web Development Intensive <span>Fall 2016</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Korea Advanced Institute of Science and Technology</h4>
+                            <p>
+                                M.S., Materials Science and Engineering <span>Summer 2012</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4>University of California, Santa Barbara</h4>
+                            <p>
+                                B.S., Biochemistry <span>Summer 2008</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="resume-desc">
-                <h3 class="experience">EXPERIENCE</h3>
-                <ul>
-                    <li>
-                        <h4>C4 Laboratories</h4>
-                        <p>
-                            Senior Research Associate <span>2015-2016</span>
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Yogis Grill</h4>
-                        <p>
-                            Restaurant Assistant Manager <span>2014-2015</span>
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Arizona State University</h4>
-                        <p>
-                            Research Consultant <span>2013-2014</span>
-                        </p>
-                    </li>
-                </ul>
+            <div class="resume-category">
+                <div class="resume-icon">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="resume-desc">
+                    <h3 class="experience">EXPERIENCE</h3>
+                    <ul>
+                        <li>
+                            <h4>C4 Laboratories</h4>
+                            <p>
+                                Senior Research Associate <span>2015-2016</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Yogis Grill</h4>
+                            <p>
+                                Restaurant Assistant Manager <span>2014-2015</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Arizona State University</h4>
+                            <p>
+                                Research Consultant <span>2013-2014</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -162,9 +163,8 @@
 <section id="projects">
     <div class="container">
         <div class="gallery-details">
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
             <p>Click on images to view the demo</p>
-            <p>Click on description to view the source</p>
         </div>
         <div class="gallery">
             <ul>
@@ -173,8 +173,8 @@
                         <img src="img/letterA.jpeg">
                     </a>
                     <a class="info" href="">
-                        <span>Project A</span>
-                        <span>This is description to project A</span>
+                        <span>Code Up</span>
+                        <span>Real-time code collaboration platform</span>
                     </a>
                 </li>
                 <li class="project">
@@ -218,6 +218,7 @@
     </div>
 </section>
 
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>

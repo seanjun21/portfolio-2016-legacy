@@ -19,7 +19,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: black;
+    background: #9c1737;
 }
 
 ul.topnav li {
@@ -33,11 +33,14 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 700;
     font-size: 17px;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul.topnav li a:hover {
-    background-color: #64141e;
+    background: black;
+    color: white !important;
 }
 
 ul.topnav li.icon {
@@ -56,7 +59,7 @@ ul.topnav li.icon {
 
     ul.topnav.responsive {
         position: fixed;
-        z-index: 10;
+        z-index: 100;
         top: 0px;
         width: 100%;
     }
@@ -73,42 +76,44 @@ ul.topnav li.icon {
     }
 
     ul.topnav.responsive li a {
-        background-color: black;
+        background: #9c1737;
         display: block;
         text-align: left;
+    }
+
+    ul.topnav.responsive li a:hover {
+        background: black;
     }
 }
 
 /* Masthead Header */
 
 #masthead {
-    background: url(../img/masthead.jpeg) center;
-    background-size: cover;
+    background: #0f2a56;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {
-    width: 90%;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 10);
+    font-family: 'Roboto', sans-serif;
 }
 
 .header h1 {
     margin: 0 0 25px 0;
     font-size: 60px;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .header h2 {
     margin: 0;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .email {
@@ -145,7 +150,7 @@ ul.contact-list i {
 }
 
 ul.contact-list i:hover {
-    background-color: #314F81;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* About Section */
@@ -154,17 +159,20 @@ ul.contact-list i:hover {
     text-align: center;
     background: white;
     position: relative;
-    height: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.profile {
-    max-width: 77.5em;
+.container {
+    max-width: 67.5em;
     margin-left: auto;
     margin-right: auto;
-    padding: 5em 2em 1em;
+    padding: 4em 2em 4em;
 }
 
-.profile:after {
+.container:after {
     clear: both;
     content: "";
     display: table;
@@ -184,7 +192,7 @@ ul.contact-list i:hover {
     background-size: cover;
     background: no-repeat center center;
     border-radius: 99em;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -199,15 +207,9 @@ ul.contact-list i:hover {
     margin: 0;
     font-weight: normal;
     font-size: 20px;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 44px;
     color: black;
-}
-
-.resume {
-    max-width: 67.5em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .resume:after {
@@ -216,14 +218,9 @@ ul.contact-list i:hover {
     display: table;
 }
 
-.resume:last-of-type {
-    padding-bottom: 2em;
-}
-
 .resume-category {
     width: 50%;
     float: left;
-    padding: 0 0 2em 3em;
     position: relative;
 }
 
@@ -281,12 +278,13 @@ ul.contact-list i:hover {
     float: left;
     text-align: left;
     width: 80%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .resume-desc h3 {
     margin: 0;
     padding-top: 1em;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: normal;
     text-shadow: 1px 1px 2px black;
 }
@@ -299,17 +297,12 @@ ul.contact-list i:hover {
 .resume-desc li {
     list-style: none;
     margin: 0.7em 0;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-.resume-desc h4 {
+.resume-desc h4, p {
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
-}
-
-.resume-desc p {
-    margin: 0;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .resume-desc span {
@@ -334,28 +327,21 @@ ul.contact-list i:hover {
 /* Projects section */
 
 #projects {
-    background-color: #ffcb17;
-    width: 100%;
-    height: auto;
+    background: #ffcb17;
+    /*background: url(../img/masthead.jpeg);*/
+    /*background-size: cover;*/
+    /*width: 100%;*/
+    min-height: 100%;
     text-align: center;
-}
-
-.container {
-    max-width: 67.5em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 7em 2em 1em;
-    /*padding: 40px 20px;*/
-}
-
-.container:after {
-    clear: both;
-    content: "";
-    display: table;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gallery-details {
-    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-family: 'Raleway', sans-serif;
     display: block;
     width: 100%;
     margin-bottom: 2em;
@@ -421,7 +407,9 @@ a.img img {
 
 a.info {
     font-size: 20px;
+    font-family: 'Raleway', sans-serif;
     text-align: left;
+    color: black;
     background: rgba(255, 255, 255, 0.25);
     bottom: 0;
     display: inline-block;
@@ -431,22 +419,25 @@ a.info {
     position: relative;
 }
 
-a.info span:first-child {
-    bottom: 36px;
+.project a:hover+a.info {
+    background: rgba(255,255,255,0.5);
 }
 
-a.info span {
-    position: absolute;
-    display: block;
-}
-
-a.info span:nth-child(2) {
-    font-weight: 300;
-    font-size: 14px;
+a.info:hover {
+    background: rgba(255,255,255,0.5);
 }
 
 a.info span {
     position: absolute;
     bottom: 18px;
     display: block;
+}
+
+a.info span:first-child {
+    bottom: 36px;
+}
+
+a.info span:nth-child(2) {
+    font-weight: 300;
+    font-size: 14px;
 }
