@@ -39,7 +39,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-    background: black;
+    background: rgba(0, 0, 0, 0.5) !important;
     color: white !important;
 }
 
