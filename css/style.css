@@ -91,7 +91,6 @@ ul.topnav li.icon {
 #masthead {
     background: #0f2a56;
     height: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,6 +101,8 @@ ul.topnav li.icon {
     text-align: center;
     text-shadow: 0 3px 2px rgba(0, 0, 0, 10);
     font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 80%;
 }
 
 .header h1 {
@@ -156,10 +157,9 @@ ul.contact-list i:hover {
 /* About Section */
 
 #about {
-    text-align: center;
     background: white;
-    position: relative;
     min-height: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,10 +169,10 @@ ul.contact-list i:hover {
     max-width: 67.5em;
     margin-left: auto;
     margin-right: auto;
-    padding: 4em 2em 4em;
+    padding: 4em 20px 4em;
 }
 
-.container:after {
+.container, .profile, .resume-category:after {
     clear: both;
     content: "";
     display: table;
@@ -198,7 +198,6 @@ ul.contact-list i:hover {
 
 .biography {
     float: left;
-    display: block;
     width: 67%;
     text-align: left;
 }
@@ -221,13 +220,6 @@ ul.contact-list i:hover {
 .resume-category {
     width: 50%;
     float: left;
-    position: relative;
-}
-
-.resume-category:after {
-    clear: both;
-    content: "";
-    display: table;
 }
 
 .resume-icon i {
@@ -267,11 +259,11 @@ ul.contact-list i:hover {
 }
 
 .resume-icon .fa-briefcase {
-    color: gold;
+    color: seagreen;
 }
 
 .resume-desc .experience {
-    color: gold;
+    color: seagreen;
 }
 
 .resume-desc {
@@ -328,12 +320,8 @@ ul.contact-list i:hover {
 
 #projects {
     background: #ffcb17;
-    /*background: url(../img/masthead.jpeg);*/
-    /*background-size: cover;*/
-    /*width: 100%;*/
     min-height: 100%;
     text-align: center;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,7 +330,6 @@ ul.contact-list i:hover {
 .gallery-details {
     color: black;
     font-family: 'Raleway', sans-serif;
-    display: block;
     width: 100%;
     margin-bottom: 2em;
 }
@@ -357,17 +344,8 @@ ul.contact-list i:hover {
 .gallery-details p {
     margin: 0px 0px 14px;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-}
-
-.gallery-details p:last-child {
     font-size: 15px;
-}
-
-.gallery {
-    display: block;
-    width: 100%;
+    line-height: 36px;
 }
 
 .gallery ul {
@@ -381,7 +359,6 @@ ul.contact-list i:hover {
     margin: 0 15px 40px 15px;
     min-width: 300px;
     min-height: 280px;
-    position: relative;
 }
 
 .project a {
@@ -392,7 +369,6 @@ a.img {
     height: 200px;
     z-index: 10;
     overflow: hidden;
-    position: relative;
 }
 
 a.img img {
@@ -415,29 +391,56 @@ a.info {
     display: inline-block;
     width: 300px;
     max-height: 51px;
-    padding: 50px 20px 20px 20px;
+    padding: 50px 20px 50px 20px;
     position: relative;
 }
 
-.project a:hover+a.info {
-    background: rgba(255,255,255,0.5);
+a.img img:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
 }
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*a.img img:hover {*/
+    /*filter: brightness(50%);*/
+/*}*/
 
 a.info:hover {
-    background: rgba(255,255,255,0.5);
+    filter: brightness(50%);
 }
 
-a.info span {
+a.info p {
     position: absolute;
-    bottom: 18px;
-    display: block;
 }
 
-a.info span:first-child {
-    bottom: 36px;
+a.info p:first-child {
+    top: 16px;
 }
 
-a.info span:nth-child(2) {
+a.info p:nth-child(2) {
     font-weight: 300;
     font-size: 14px;
+    top: 45px;
+}
+
+a.info p:nth-child(3) {
+    font-weight: 300;
+    font-size: 14px;
+    top: 67px;
 }

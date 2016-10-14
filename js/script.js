@@ -1,9 +1,7 @@
 $(document).ready(function () {
-
-    var aboutOffset = $('#about').position().top * 0.94;
-    var projectsOffset = $('#projects').position().top * 0.97;
-
-    $(window).scroll(function () {
+    $(window).on("load resize scroll", function () {
+        var aboutOffset = $('#about').position().top * 0.94;
+        var projectsOffset = $('#projects').position().top * 0.97;
         var scrollPos = $(window).scrollTop();
 
         if (scrollPos < aboutOffset) {
