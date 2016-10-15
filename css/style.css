@@ -391,7 +391,7 @@ a.info {
     display: inline-block;
     width: 300px;
     max-height: 51px;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 70px 20px;
     position: relative;
 }
 
@@ -400,6 +400,7 @@ a.img img:hover {
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
 }
+
 @-webkit-keyframes flash {
     0% {
         opacity: .4;
@@ -417,10 +418,6 @@ a.img img:hover {
     }
 }
 
-/*a.img img:hover {*/
-    /*filter: brightness(50%);*/
-/*}*/
-
 a.info:hover {
     filter: brightness(50%);
 }
@@ -437,10 +434,12 @@ a.info p:nth-child(2) {
     font-weight: 300;
     font-size: 14px;
     top: 45px;
+    line-height: 20px;
+    padding-right: 10px;
 }
 
 a.info p:nth-child(3) {
     font-weight: 300;
     font-size: 14px;
-    top: 67px;
+    bottom: 16px;
 }
