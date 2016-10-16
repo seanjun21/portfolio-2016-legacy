@@ -1,23 +1,31 @@
 $(document).ready(function () {
     $(window).on("load resize scroll", function () {
+        var scrollPos = $(window).scrollTop();
+
         var aboutOffset = $('#about').position().top * 0.94;
         var projectsOffset = $('#projects').position().top * 0.97;
-        var scrollPos = $(window).scrollTop();
+        var contactOffset = $('#contact').position().top * 0.98;
 
         if (scrollPos < aboutOffset) {
             $('#masthead-nav a').css({'background': '#0f2a56', 'color': 'white'});
             $('#about-nav a').css({'background': '#9c1737', 'color': 'white'});
             $('#projects-nav a').css({'background': '#9c1737', 'color': 'white'});
-        }
-        else if (scrollPos >= aboutOffset && scrollPos < projectsOffset) {
+            $('#contact-nav a').css({'background': '#9c1737', 'color': 'white'})
+        } else if (scrollPos >= aboutOffset && scrollPos < projectsOffset) {
             $('#masthead-nav a').css({'background': '#9c1737', 'color': 'white'});
             $('#about-nav a').css({'background': 'white', 'color': 'black'});
             $('#projects-nav a').css({'background': '#9c1737', 'color': 'white'});
-        }
-        else {
+            $('#contact-nav a').css({'background': '#9c1737', 'color': 'white'})
+        } else if (scrollPos >= projectsOffset && scrollPos < contactOffset) {
             $('#masthead-nav a').css({'background': '#9c1737', 'color': 'white'});
             $('#about-nav a').css({'background': '#9c1737', 'color': 'white'});
             $('#projects-nav a').css({'background': '#ffcb17', 'color': 'black'});
+            $('#contact-nav a').css({'background': '#9c1737', 'color': 'white'})
+        } else {
+            $('#masthead-nav a').css({'background': '#9c1737', 'color': 'white'});
+            $('#about-nav a').css({'background': '#9c1737', 'color': 'white'});
+            $('#projects-nav a').css({'background': '#9c1737', 'color': 'white'});
+            $('#contact-nav a').css({'background': '#272f4f', 'color': 'white'})
         }
     });
 });
@@ -30,3 +38,14 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+//
+// $('body').on('keyup', 'textarea', function (e) {
+//     var scrollTop = $(document).scrollTop();
+//     var prevHeight = $(this).height();
+//     $(this).css('height', 'auto');
+//     var nextHeight = this.scrollHeight;
+//     $(this).height(nextHeight);
+//     $(document).scrollTop(scrollTop + (nextHeight - prevHeight));
+// });
+//
+// $('textarea').keyup();
