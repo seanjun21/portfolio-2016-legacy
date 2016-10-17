@@ -1,10 +1,11 @@
 $(document).ready(function () {
+    /* Nav-bar Highlight */
     $(window).on("load resize scroll", function () {
         var scrollPos = $(window).scrollTop();
 
         var aboutOffset = $('#about').position().top * 0.94;
         var projectsOffset = $('#projects').position().top * 0.97;
-        var contactOffset = $('#contact').position().top * 0.98;
+        var contactOffset = $('#footer').position().top * 0.98;
 
         if (scrollPos < aboutOffset) {
             $('#masthead-nav a').css({'background': '#0f2a56', 'color': 'white'});
@@ -38,14 +39,4 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-//
-// $('body').on('keyup', 'textarea', function (e) {
-//     var scrollTop = $(document).scrollTop();
-//     var prevHeight = $(this).height();
-//     $(this).css('height', 'auto');
-//     var nextHeight = this.scrollHeight;
-//     $(this).height(nextHeight);
-//     $(document).scrollTop(scrollTop + (nextHeight - prevHeight));
-// });
-//
-// $('textarea').keyup();
+

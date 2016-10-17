@@ -136,12 +136,13 @@ ul.topnav li.icon {
 }
 
 ul.contact-list i {
+    color: white;
     display: inline-block;
     list-style: none;
     font-size: 38px;
     width: 60px;
     height: 60px;
-    margin: 0.7%;
+    margin: 0.5%;
     border: 0;
     border-radius: 4px;
     line-height: 60px;
@@ -149,7 +150,8 @@ ul.contact-list i {
 }
 
 ul.contact-list i:hover {
-    background: rgba(255, 255, 255, 0.25);
+    color: #ffcb17;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 /* About Section */
@@ -194,8 +196,6 @@ ul.contact-list i:hover {
     background-size: cover;
     background: no-repeat center center;
     border-radius: 99em;
-    /*border: 1px solid black;*/
-    /*box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);*/
 }
 
 .biography {
@@ -214,10 +214,9 @@ ul.contact-list i:hover {
 
 .quote {
     color: #333;
-    font: 400 20px/30px 'vollkorn';
+    font: 400 20px/30px 'Roboto';
     font-style: italic;
-    margin: 0 0 10px 0;
-    text-indent: -6px;
+    padding-left: 1.5em;
 }
 
 .resume:after {
@@ -229,6 +228,8 @@ ul.contact-list i:hover {
 .resume-category {
     width: 50%;
     float: left;
+    margin-bottom: 1em;
+    min-width: 320px;
 }
 
 .resume-icon i {
@@ -240,7 +241,6 @@ ul.contact-list i:hover {
     border: 0;
     border-radius: 4px;
     line-height: 60px;
-    /*text-shadow: 2px 2px 5px black;*/
 }
 
 .resume-icon .fa-code {
@@ -301,9 +301,14 @@ ul.contact-list i:hover {
     margin: 0;
 }
 
-.resume-desc span {
+.resume-desc ul span {
     color: gray;
     font-size: 0.7em;
+}
+
+.resume-link {
+    color: seagreen;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 740px) {
@@ -320,7 +325,7 @@ ul.contact-list i:hover {
     }
 }
 
-/* Projects section */
+/* Projects Section */
 
 #projects {
     background: #ffcb17;
@@ -331,20 +336,20 @@ ul.contact-list i:hover {
     justify-content: center;
 }
 
-.gallery-details {
+.details {
     color: black;
     width: 100%;
     margin-bottom: 2em;
 }
 
-.gallery-details h2 {
+.details h2 {
     margin: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
 }
 
-.gallery-details p {
+.details p {
     margin: 0 0 14px;
     font-weight: normal;
     font-size: 15px;
@@ -399,7 +404,6 @@ a.info {
 
 a.img img:hover {
     opacity: 1;
-    -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
 }
 
@@ -441,14 +445,9 @@ a.info p:nth-child(2) {
     padding-right: 10px;
 }
 
-a.info p:nth-child(3) {
-    font-weight: 300;
-    font-size: 14px;
-    bottom: 16px;
-}
+/* Footer Section */
 
-#contact {
-    color: white;
+#footer {
     background: #272f4f;
     min-height: 100%;
     text-align: center;
@@ -457,138 +456,60 @@ a.info p:nth-child(3) {
     justify-content: center;
 }
 
-.footer {
+#footer .details {
     color: white;
-    width: 500px;
-    text-align: center;
-    margin: auto;
-    padding: 4em 20px 4em;
 }
 
-.contact-details h2 {
+.contacts ul {
+    display: inline-block;
     margin: 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
+    padding: 0;
 }
 
-.contact-details p {
-    margin: 0 0 14px;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 36px;
+.contact {
+    display: inline-block;
+    width: 40%;
+    min-width: 400px;
+    text-align: left;
+    padding-left: 7%;
 }
 
-.feedback-input {
-    font-weight:500;
+.contact a {
+    text-decoration: none;
+    color: white;
     font-size: 18px;
-    line-height: 22px;
-    padding: 13px 13px 13px 54px;
-    margin-bottom: 10px;
-    width:100%;
-    border: 3px solid rgba(0,0,0,0);
 }
 
-.feedback-input:focus{
-    border: 3px solid #3498db;
-    color: #3498db;
-    outline: none;
-    padding: 13px 13px 13px 54px;
+.contact a:hover {
+    color: #ffcb17;
 }
 
-/* Icons ---------------------------------- */
-#name{
-    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
+.contact a:hover i {
+    color: #ffcb17;
 }
 
-#name:focus{
-    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-    background-size: 30px 30px;
-    background-position: 8px 5px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
+.contact i {
+    color: white;
+    display: inline-block;
+    list-style: none;
+    font-size: 38px;
+    width: 60px;
+    height: 60px;
+    margin: 0.5%;
+    border: 0;
+    border-radius: 4px;
+    line-height: 60px;
+    transition: background 0.2s linear 0s;
 }
 
-#email{
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
+.contact i:hover {
+    color: #ffcb17;
+    background: rgba(0, 0, 0, 0.25);
 }
 
-#email:focus{
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#comment{
-    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-textarea {
-    width: 100%;
-    min-height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-    background-color:white;
-}
-
-#button-blue{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    float:left;
-    width: 100%;
-    border: #fbfbfb solid 4px;
-    cursor:pointer;
-    background-color: #3498db;
-    color:white;
-    font-size:24px;
-    padding-top:22px;
-    padding-bottom:22px;
-    transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
-}
-
-#button-blue:hover{
-    background-color: rgba(0,0,0,0);
-    color: #0493bd;
-}
-
-.submit:hover {
-    color: #3498db;
-}
-
-.ease {
-    width: 0px;
-    height: 74px;
-    background-color: #fbfbfb;
-    transition: .3s ease;
-}
-
-.submit:hover .ease{
-    width:100%;
-    background-color:white;
-}
-
-@media only screen and (max-width: 580px) {
-    #form-div{
-        left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
+.credits {
+    margin-top: 4em;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
 }

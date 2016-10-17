@@ -27,7 +27,7 @@
         <li id="masthead-nav"><a href="#masthead">SEAN</a></li>
         <li id="about-nav"><a href="#about">ABOUT</a></li>
         <li id="projects-nav"><a href="#projects">PROJECTS</a></li>
-        <li id="contact-nav"><a href="#contact">CONTACT</a></li>
+        <li id="contact-nav"><a href="#footer">CONTACT</a></li>
         <li class="icon">
             <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </li>
@@ -43,11 +43,9 @@
         </div>
         <ul class="contact-list">
             <a href="mailto:seanjun21@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
-            <a href="docs/resume.pdf" target="_blank"><i class="fa fa-file-text fa-fw"></i></a>
             <a href="http://www.github.com/seanjun21" target="_blank"><i class="fa fa-github fa-fw"></i></a>
             <a href="http://www.linkedin.com/in/seanjun21" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
             <a href="http://www.twitter.com/seanjun21" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
-            <a href="http://www.instagram.com/seanjun21" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
         </ul>
     </div>
 </header>
@@ -63,7 +61,7 @@
                     Hi, I'm Sean, a Full Stack Developer from <strong>PHOENIX, AZ</strong> with a background in
                     Biochemistry and
                     Engineering. I believe that my past work and programming share something very important in
-                    common;<br>
+                    common:<br>
                     <span class="quote">"passionate work can greatly benefit our communities."</span><br>It is my
                     personal and
                     professional goal to continue giving back as a developer.
@@ -137,6 +135,9 @@
                 </div>
                 <div class="resume-desc">
                     <h3 class="experience">EXPERIENCE</h3>
+                    <a href="docs/resume.pdf" target="_blank" class="resume-link"><span
+                            style="font-variant: small-caps"><i
+                            class="fa fa-download"></i> resume</span></a>
                     <ul>
                         <li>
                             <h4>C4 Laboratories</h4>
@@ -165,7 +166,7 @@
 
 <section id="projects">
     <div class="container">
-        <div class="gallery-details">
+        <div class="details">
             <h2>PROJECTS</h2>
             <p>Click on images to view the demo</p>
         </div>
@@ -177,8 +178,9 @@
                     </a>
                     <a class="info" target="_blank" href="https://github.com/seanjun21/code-up">
                         <p>Code Up <i class="fa fa-github" aria-hidden="true"></i></p>
-                        <p>Real-time code collaboration platform that provides answers to code questions</p>
-                        <p><i class="fa fa-code" aria-hidden="true"></i> React, Socket.io, PostgreSQL</p>
+                        <p>Real-time code collaboration platform that provides answers to code questions<br>
+                            <i class="fa fa-code" aria-hidden="true"></i> React, Socket.io, PostgreSQL
+                        </p>
                     </a>
                 </li>
                 <li class="project">
@@ -187,8 +189,9 @@
                     </a>
                     <a class="info" target="_blank" href="https://github.com/robbykim/korean-x">
                         <p>Korean-X <i class="fa fa-github" aria-hidden="true"></i></p>
-                        <p>App designed to teach users Korean using a spaced-repetition algorithm</p>
-                        <p><i class="fa fa-code" aria-hidden="true"></i> React, Node.js, Google OAuth</p>
+                        <p>App designed to teach users Korean using a spaced-repetition algorithm<br>
+                            <i class="fa fa-code" aria-hidden="true"></i> React, Node.js, Google OAuth
+                        </p>
                     </a>
                 </li>
                 <li class="project">
@@ -197,8 +200,9 @@
                     </a>
                     <a class="info" target="_blank" href="https://github.com/seanjun21/fridge-it">
                         <p>Fridge-It <i class="fa fa-github" aria-hidden="true"></i></p>
-                        <p>Cooking app, which allows users to search for recipes based on ingredients</p>
-                        <p><i class="fa fa-code" aria-hidden="true"></i> React/Redux, Node.js, Express</p>
+                        <p>Cooking app, which allows users to search for recipes based on ingredients<br>
+                            <i class="fa fa-code" aria-hidden="true"></i> React/Redux, Node.js, Express
+                        </p>
                     </a>
                 </li>
             </ul>
@@ -206,31 +210,27 @@
     </div>
 </section>
 
-<section id="contact">
-    <div class="footer">
-        <div class="contact-details">
-            <h2>CONTACT</h2>
-            <p>Let us keep in touch!</p>
+<section id="footer">
+    <div class="container">
+        <div class="details">
+            <h2>CONTACTS</h2>
+            <p>Get in touch with me via:</p>
         </div>
-        <form>
-            <p class="name">
-                <input name="name" type="text"
-                       class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
-                       id="name"/>
-            </p>
-            <p class="email">
-                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"
-                       placeholder="Email"/>
-            </p>
-            <p class="text">
-                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
-                          placeholder="Comment"></textarea>
-            </p>
-            <div class="submit">
-                <input type="submit" value="SEND" id="button-blue"/>
-                <div class="ease"></div>
-            </div>
-        </form>
+        <div class="contacts">
+            <ul>
+                <li class="contact"><a href="mailto:seanjun21@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i> seanjun21@gmail.com</a></li>
+                <li class="contact"><a href="docs/resume.pdf" target="_blank"><i class="fa fa-file-text fa-fw"></i> Download Resume</a></li>
+                <li class="contact"><a href="http://www.github.com/seanjun21" target="_blank"><i class="fa fa-github fa-fw"></i> github.com/seanjun21</a></li>
+                <li class="contact"><a href="http://www.linkedin.com/in/seanjun21" target="_blank"><i class="fa fa-linkedin fa-fw"></i> linkedin.com/seanjun21</a></li>
+                <li class="contact"><a href="http://www.twitter.com/seanjun21" target="_blank"><i class="fa fa-twitter fa-fw"></i> twitter.com/seanjun21</a></li>
+                <li class="contact"><a href="http://www.facebook.com/seanjun21" target="_blank"><i class="fa fa-facebook fa-fw"></i> facebook.com/seanjun21</a></li>
+                <li class="contact"><a href="http://www.instagram.com/seanjun21" target="_blank"><i class="fa fa-instagram fa-fw"></i> instagram.com/seanjun21</a></li>
+                <li class="contact"><a href="tel:14805325520" target="_blank"><i class="fa fa-phone fa-fw"></i> 480.532.5520</a></li>
+            </ul>
+        </div>
+        <p class="credits">
+            <i class="fa fa-copyright "></i> Sean Jun 2016
+        </p>
     </div>
 </section>
 
