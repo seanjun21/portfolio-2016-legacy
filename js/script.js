@@ -1,8 +1,6 @@
 $(document).ready(function () {
-    /* Nav-bar Highlight */
     $(window).on("load resize scroll", function () {
         var scrollPos = $(window).scrollTop();
-
         var aboutOffset = $('#about').position().top * 0.94;
         var projectsOffset = $('#projects').position().top * 0.97;
         var contactOffset = $('#footer').position().top * 0.98;
