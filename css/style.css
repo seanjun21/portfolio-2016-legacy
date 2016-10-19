@@ -169,7 +169,7 @@ ul.contact-list i:hover {
     max-width: 67.5em;
     margin-left: auto;
     margin-right: auto;
-    padding: 5em 20px 5em;
+    padding: 5em 10px 5em;
 }
 
 .container, .profile, .resume-category:after {
@@ -205,7 +205,7 @@ ul.contact-list i:hover {
 }
 
 .biography p {
-    margin: 0;
+    margin: 0 3%;
     font-weight: normal;
     font-size: 20px;
     line-height: 37px;
@@ -360,10 +360,22 @@ ul.contact-list i:hover {
 
 .project {
     display: inline-block;
-    width: 30%;
-    margin: 0 15px 40px 15px;
+    width: 33%;
+    margin-bottom: 40px;
     min-width: 300px;
     min-height: 280px;
+}
+
+@media screen and (max-width: 930px) {
+    .project {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .project {
+        width: 100%;
+    }
 }
 
 .project a {
@@ -509,4 +521,17 @@ a.info:hover {
     font-size: 24px;
     font-weight: normal;
     color: #fff;
+}
+
+@media screen and (max-width: 645px) {
+    .contact-info {
+        display: none;
+    }
+
+    .contact {
+        text-align: center;
+        padding: 0;
+        width: 20%;
+        min-width: inherit;
+    }
 }
