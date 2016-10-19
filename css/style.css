@@ -169,7 +169,7 @@ ul.contact-list i:hover {
     max-width: 67.5em;
     margin-left: auto;
     margin-right: auto;
-    padding: 4em 20px 4em;
+    padding: 5em 20px 5em;
 }
 
 .container, .profile, .resume-category:after {
@@ -213,10 +213,8 @@ ul.contact-list i:hover {
 }
 
 .quote {
-    color: #333;
-    font: 400 20px/30px 'Roboto';
     font-style: italic;
-    padding-left: 1.5em;
+    padding-left: 2em;
 }
 
 .resume:after {
@@ -350,7 +348,6 @@ ul.contact-list i:hover {
 }
 
 .details p {
-    margin: 0 0 14px;
     font-weight: normal;
     font-size: 15px;
     line-height: 36px;
@@ -508,7 +505,7 @@ a.info p:nth-child(2) {
 }
 
 .credits {
-    margin-top: 4em;
+    margin-top: 3em;
     font-size: 24px;
     font-weight: normal;
     color: #fff;
