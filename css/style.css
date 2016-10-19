@@ -530,6 +530,7 @@ a.info:hover {
 
     .contact {
         text-align: center;
+        margin-top: 10px;
         padding: 0;
         width: 20%;
         min-width: inherit;
