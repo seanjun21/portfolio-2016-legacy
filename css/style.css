@@ -387,7 +387,7 @@ a.img img {
 }
 
 a.info {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     color: black;
     background: rgba(255, 255, 255, 0.25);
@@ -395,8 +395,24 @@ a.info {
     display: inline-block;
     width: 300px;
     max-height: 51px;
-    padding: 50px 20px 70px 20px;
+    padding: 50px 15px 60px 15px;
     position: relative;
+}
+
+a.info p {
+    position: absolute;
+}
+
+a.info p:first-child {
+    top: 12px;
+}
+
+a.info p:nth-child(2) {
+    font-weight: 300;
+    font-size: 14px;
+    top: 35px;
+    line-height: 20px;
+    padding-right: 15px;
 }
 
 a.img img:hover {
@@ -424,22 +440,6 @@ a.img img:hover {
 
 a.info:hover {
     filter: brightness(50%);
-}
-
-a.info p {
-    position: absolute;
-}
-
-a.info p:first-child {
-    top: 16px;
-}
-
-a.info p:nth-child(2) {
-    font-weight: 300;
-    font-size: 14px;
-    top: 45px;
-    line-height: 20px;
-    padding-right: 10px;
 }
 
 /* Footer Section */
