@@ -80,10 +80,6 @@ ul.topnav li.icon {
         display: block;
         text-align: left;
     }
-
-    ul.topnav.responsive li a:hover {
-        background: black;
-    }
 }
 
 /* Masthead Header */
@@ -205,16 +201,11 @@ ul.contact-list i:hover {
 }
 
 .biography p {
-    margin: 0 3%;
+    margin: 0;
     font-weight: normal;
     font-size: 20px;
     line-height: 37px;
     color: black;
-}
-
-.quote {
-    font-style: italic;
-    padding-left: 2em;
 }
 
 .resume:after {
@@ -318,6 +309,15 @@ ul.contact-list i:hover {
         width: 100%;
     }
 
+    .biography p {
+        margin: 0 4%;
+        text-align: center;
+    }
+
+    .quote {
+        padding: 0;
+    }
+
     .resume-category {
         width: 100%;
     }
@@ -360,21 +360,16 @@ ul.contact-list i:hover {
 
 .project {
     display: inline-block;
-    width: 33%;
-    margin-bottom: 40px;
+    width: 25%;
+    margin: 0 20px 40px;
     min-width: 300px;
     min-height: 280px;
 }
 
-@media screen and (max-width: 930px) {
-    .project {
-        width: 43%;
-    }
-}
-
 @media screen and (max-width: 730px) {
     .project {
-        width: 100%;
+        /*width: inherit;*/
+        /*margin: 0 0 40px;*/
     }
 }
 
@@ -532,7 +527,6 @@ a.info:hover {
         text-align: center;
         margin-top: 10px;
         padding: 0;
-        width: 20%;
         min-width: inherit;
     }
 }
