@@ -518,7 +518,7 @@ a.info:hover {
     color: #fff;
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 705px) {
     .contact-info {
         display: none;
     }
@@ -528,5 +528,6 @@ a.info:hover {
         margin-top: 10px;
         padding: 0;
         min-width: inherit;
+        width: 30%;
     }
 }
