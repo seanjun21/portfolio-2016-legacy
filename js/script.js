@@ -3,7 +3,7 @@ $(document).ready(function () {
         var scrollPos = $(window).scrollTop();
         var aboutOffset = $('#about').position().top * 0.94;
         var projectsOffset = $('#projects').position().top * 0.97;
-        var contactOffset = $('#footer').position().top * 0.98;
+        var contactOffset = $('#footer').position().top * 0.9815;
 
         if (scrollPos < aboutOffset) {
             $('#masthead-nav a').css({'background': '#0f2a56', 'color': 'white'});
