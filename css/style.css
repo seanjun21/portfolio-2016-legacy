@@ -7,6 +7,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 /* Navigation Bar */
@@ -102,13 +103,13 @@ ul.topnav li.icon {
 .header h1 {
     margin: 0 0 25px 0;
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .header h2 {
     margin: 0;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .email {
@@ -118,7 +119,7 @@ ul.topnav li.icon {
 .header a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
 }
 
@@ -202,7 +203,6 @@ ul.contact-list i:hover {
 
 .biography p {
     margin: 0;
-    font-weight: normal;
     font-size: 20px;
     line-height: 37px;
     color: black;
@@ -217,8 +217,7 @@ ul.contact-list i:hover {
 .resume-category {
     width: 50%;
     float: left;
-    margin: 0 0 1em 0em;
-    min-width: 320px;
+    margin: 0 0 1em 0;
 }
 
 .resume-icon i {
@@ -268,12 +267,12 @@ ul.contact-list i:hover {
     float: left;
     text-align: left;
     width: 80%;
+    line-height: 1.5;
 }
 
 .resume-desc h3 {
     margin: 0;
     padding-top: 1em;
-    font-weight: normal;
 }
 
 .resume-desc ul {
@@ -283,7 +282,7 @@ ul.contact-list i:hover {
 
 .resume-desc li {
     list-style: none;
-    margin: 0.7em 0;
+    margin: 0.5em 0;
 }
 
 .resume-desc h4, p {
@@ -323,6 +322,16 @@ ul.contact-list i:hover {
     }
 }
 
+@media screen and (max-width: 335px) {
+    .resume-desc {
+        padding-left: 10px;
+    }
+
+    .resume-desc h3 {
+        padding-top: 0;
+    }
+}
+
 /* Projects Section */
 
 #projects {
@@ -348,7 +357,6 @@ ul.contact-list i:hover {
 }
 
 .details p {
-    font-weight: normal;
     font-size: 15px;
     line-height: 36px;
 }
@@ -415,7 +423,6 @@ a.info p:first-child {
 }
 
 a.info p:nth-child(2) {
-    font-weight: 300;
     font-size: 14px;
     top: 35px;
     line-height: 20px;
@@ -514,7 +521,6 @@ a.info:hover {
 .credits {
     margin-top: 3em;
     font-size: 24px;
-    font-weight: normal;
     color: #fff;
 }
 
