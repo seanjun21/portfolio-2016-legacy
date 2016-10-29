@@ -18,7 +18,7 @@ $(document).ready(function () {
         } else if (scrollPos >= projectsOffset && scrollPos < contactOffset) {
             $('#masthead-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
             $('#about-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
-            $('#projects-nav a').css({'background': '#ffcb17', 'color': '#000000'});
+            $('#projects-nav a').css({'background': '#FFD000', 'color': '#000000'});
             $('#contact-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'})
         } else {
             $('#masthead-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});

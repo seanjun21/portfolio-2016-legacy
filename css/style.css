@@ -9,6 +9,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.5;
+    color: #06080D;
 }
 
 /* Navigation Bar */
@@ -126,7 +127,7 @@ ul.topnav li.icon {
 }
 
 .header a:hover {
-    color: #FFCB17;
+    color: #FFD000;
 }
 
 .contact-list {
@@ -149,7 +150,7 @@ ul.contact-list i {
 }
 
 ul.contact-list i:hover {
-    color: #FFCB17;
+    color: #FFD000;
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -207,7 +208,7 @@ ul.contact-list i:hover {
 .biography p {
     margin: 0;
     font-size: 20px;
-    color: #000000;
+    /*color: #000000;*/
 }
 
 .resume:after {
@@ -254,12 +255,12 @@ ul.contact-list i:hover {
 }
 
 .resume-icon .fa-graduation-cap {
-    color: #FFCB17;
+    color: #FFD000;
     text-shadow: 1px 1px 1px grey;
 }
 
 .resume-desc .education {
-    color: #FFCB17;
+    color: #FFD000;
     text-shadow: 1px 1px 1px grey;
 }
 
@@ -348,7 +349,7 @@ ul.contact-list i:hover {
 /* Projects Section */
 
 #projects {
-    background: #FFCB17;
+    background: #FFD000;
     min-height: 100%;
     text-align: center;
     display: flex;
@@ -415,7 +416,7 @@ a.img img {
 a.info {
     font-size: 18px;
     text-align: left;
-    color: #000000;
+    color: #06080D;
     background: rgba(255, 255, 255, 0.25);
     bottom: 0;
     display: inline-block;
@@ -467,7 +468,6 @@ a.info:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #000000;
 }
 
 .contacts ul {
@@ -486,22 +486,21 @@ a.info:hover {
 
 .contact a {
     text-decoration: none;
-    color: #000000;
+    color: #06080D;
     font-size: 18px;
 }
 
 .contact a:hover {
-    color: #ffcb17;
+    color: #FFD000;
     font-weight: 700;
-    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px #06080D;
 }
 
 .contact a:hover i {
-    color: #ffcb17;
+    color: #FFD000;
 }
 
 .contact i {
-    color: #000000;
     display: inline-block;
     list-style: none;
     font-size: 38px;
@@ -515,7 +514,7 @@ a.info:hover {
 }
 
 .contact i:hover {
-    color: #ffcb17;
+    color: #FFD000;
     background: rgba(0, 0, 0, 0.25);
 }
 
