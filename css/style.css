@@ -8,11 +8,13 @@ html, body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 /* Navigation Bar */
 
 ul.topnav {
+    line-height: 1.15;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -21,7 +23,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: #9c1737;
+    background: #9C1737;
 }
 
 ul.topnav li {
@@ -30,7 +32,7 @@ ul.topnav li {
 
 ul.topnav li a {
     display: inline-block;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,8 +42,8 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-    background: rgba(0, 0, 0, 0.5) !important;
-    color: white !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    color: #FFFFFF !important;
 }
 
 ul.topnav li.icon {
@@ -77,7 +79,7 @@ ul.topnav li.icon {
     }
 
     ul.topnav.responsive li a {
-        background: #9c1737;
+        background: #9C1737;
         display: block;
         text-align: left;
     }
@@ -86,7 +88,7 @@ ul.topnav li.icon {
 /* Masthead Header */
 
 #masthead {
-    background: #0f2a56;
+    background: #0F2A56;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -94,14 +96,14 @@ ul.topnav li.icon {
 }
 
 .header {
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin: auto;
     width: 80%;
 }
 
 .header h1 {
-    margin: 0 0 25px 0;
+    margin: 0;
     font-size: 60px;
     font-weight: 700;
 }
@@ -113,18 +115,18 @@ ul.topnav li.icon {
 }
 
 .email {
-    margin: 8px 0 20px 0;
+    margin-bottom: 20px;
 }
 
 .header a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 700;
     font-size: 24px;
 }
 
 .header a:hover {
-    color: #ffcb17;
+    color: #FFCB17;
 }
 
 .contact-list {
@@ -133,7 +135,7 @@ ul.topnav li.icon {
 }
 
 ul.contact-list i {
-    color: white;
+    color: #FFFFFF;
     display: inline-block;
     list-style: none;
     font-size: 38px;
@@ -147,14 +149,14 @@ ul.contact-list i {
 }
 
 ul.contact-list i:hover {
-    color: #ffcb17;
+    color: #FFCB17;
     background: rgba(0, 0, 0, 0.25);
 }
 
 /* About Section */
 
 #about {
-    background: white;
+    background: #FFFFFF;
     min-height: 100%;
     text-align: center;
     display: flex;
@@ -193,6 +195,7 @@ ul.contact-list i:hover {
     background-size: cover;
     background: no-repeat center center;
     border-radius: 99em;
+    box-shadow: 1px 1px 1px darkgrey;
 }
 
 .biography {
@@ -204,8 +207,7 @@ ul.contact-list i:hover {
 .biography p {
     margin: 0;
     font-size: 20px;
-    line-height: 37px;
-    color: black;
+    color: #000000;
 }
 
 .resume:after {
@@ -232,42 +234,49 @@ ul.contact-list i:hover {
 }
 
 .resume-icon .fa-code {
-    color: red;
+    color: #9C1737;
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 .resume-desc .skills {
-    color: red;
+    color: #9C1737;
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 .resume-icon .fa-code-fork {
-    color: blue;
+    color: #0F2A56;
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 .resume-desc .software {
-    color: blue;
+    color: #0F2A56;
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 .resume-icon .fa-graduation-cap {
-    color: purple;
+    color: #FFCB17;
+    text-shadow: 1px 1px 1px grey;
 }
 
 .resume-desc .education {
-    color: purple;
+    color: #FFCB17;
+    text-shadow: 1px 1px 1px grey;
 }
 
 .resume-icon .fa-briefcase {
-    color: seagreen;
+    color: #039DC3;
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 .resume-desc .experience {
-    color: seagreen;
+    color: #039DC3;
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 .resume-desc {
     float: left;
     text-align: left;
     width: 80%;
-    line-height: 1.5;
 }
 
 .resume-desc h3 {
@@ -282,7 +291,7 @@ ul.contact-list i:hover {
 
 .resume-desc li {
     list-style: none;
-    margin: 0.5em 0;
+    margin: 0.2em 0;
 }
 
 .resume-desc h4, p {
@@ -295,8 +304,12 @@ ul.contact-list i:hover {
 }
 
 .resume-link {
-    color: seagreen;
+    color: #039DC3;
     text-decoration: none;
+}
+
+.resume-link:hover {
+    text-shadow: 1px 1px 1px darkgrey;
 }
 
 @media screen and (max-width: 740px) {
@@ -335,7 +348,7 @@ ul.contact-list i:hover {
 /* Projects Section */
 
 #projects {
-    background: #ffcb17;
+    background: #FFCB17;
     min-height: 100%;
     text-align: center;
     display: flex;
@@ -344,7 +357,6 @@ ul.contact-list i:hover {
 }
 
 .details {
-    color: black;
     width: 100%;
     margin-bottom: 2em;
 }
@@ -353,12 +365,10 @@ ul.contact-list i:hover {
     margin: 0;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
 }
 
 .details p {
     font-size: 15px;
-    line-height: 36px;
 }
 
 .gallery ul {
@@ -386,6 +396,7 @@ ul.contact-list i:hover {
 }
 
 a.img {
+    background-color: #000000;
     height: 200px;
     z-index: 10;
     overflow: hidden;
@@ -404,7 +415,7 @@ a.img img {
 a.info {
     font-size: 18px;
     text-align: left;
-    color: black;
+    color: #000000;
     background: rgba(255, 255, 255, 0.25);
     bottom: 0;
     display: inline-block;
@@ -412,6 +423,7 @@ a.info {
     max-height: 51px;
     padding: 50px 15px 60px 15px;
     position: relative;
+    transition: all 1s;
 }
 
 a.info p {
@@ -419,13 +431,12 @@ a.info p {
 }
 
 a.info p:first-child {
-    top: 12px;
+    top: 7px;
 }
 
 a.info p:nth-child(2) {
     font-size: 14px;
     top: 35px;
-    line-height: 20px;
     padding-right: 15px;
 }
 
@@ -434,18 +445,9 @@ a.img img:hover {
     animation: flash 1.5s;
 }
 
-@-webkit-keyframes flash {
-    0% {
-        opacity: .4;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes flash {
     0% {
-        opacity: .4;
+        opacity: 0.4;
     }
     100% {
         opacity: 1;
@@ -453,22 +455,19 @@ a.img img:hover {
 }
 
 a.info:hover {
-    filter: brightness(50%);
+    background: rgba(255, 255, 255, 0.65);
 }
 
 /* Footer Section */
 
 #footer {
-    background: #272f4f;
+    background: #039DC3;
     min-height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#footer .details {
-    color: white;
+    color: #000000;
 }
 
 .contacts ul {
@@ -487,12 +486,14 @@ a.info:hover {
 
 .contact a {
     text-decoration: none;
-    color: white;
+    color: #000000;
     font-size: 18px;
 }
 
 .contact a:hover {
     color: #ffcb17;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .contact a:hover i {
@@ -500,7 +501,7 @@ a.info:hover {
 }
 
 .contact i {
-    color: white;
+    color: #000000;
     display: inline-block;
     list-style: none;
     font-size: 38px;
@@ -521,7 +522,6 @@ a.info:hover {
 .credits {
     margin-top: 3em;
     font-size: 24px;
-    color: #fff;
 }
 
 @media screen and (max-width: 705px) {
