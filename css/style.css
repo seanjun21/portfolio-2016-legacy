@@ -399,7 +399,9 @@ ul.contact-list i:hover {
 }
 
 a.img {
-    background-color: #000000;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: #06080D;
     height: 200px;
     z-index: 10;
     overflow: hidden;
