@@ -101,7 +101,7 @@ ul.topnav li.icon {
     color: #FFFFFF;
     text-align: center;
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 .header h1 {
@@ -470,6 +470,7 @@ a.info:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #FFFFFF;
 }
 
 .contacts ul {
@@ -488,7 +489,7 @@ a.info:hover {
 
 .contact a {
     text-decoration: none;
-    color: #06080D;
+    color: #FFFFFF;
     font-size: 18px;
 }
 

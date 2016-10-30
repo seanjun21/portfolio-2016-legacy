@@ -12,19 +12,19 @@ $(document).ready(function () {
             $('#contact-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'})
         } else if (scrollPos >= aboutOffset && scrollPos < projectsOffset) {
             $('#masthead-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
-            $('#about-nav a').css({'background': '#FFFFFF', 'color': '#000000'});
+            $('#about-nav a').css({'background': '#FFFFFF', 'color': '#06080D'});
             $('#projects-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
             $('#contact-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'})
         } else if (scrollPos >= projectsOffset && scrollPos < contactOffset) {
             $('#masthead-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
             $('#about-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
-            $('#projects-nav a').css({'background': '#FFD000', 'color': '#000000'});
+            $('#projects-nav a').css({'background': '#FFD000', 'color': '#06080D'});
             $('#contact-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'})
         } else {
             $('#masthead-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
             $('#about-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
             $('#projects-nav a').css({'background': '#9C1737', 'color': '#FFFFFF'});
-            $('#contact-nav a').css({'background': '#039DC3', 'color': '#000000'})
+            $('#contact-nav a').css({'background': '#039DC3', 'color': '#FFFFFF'})
         }
     });
 });
